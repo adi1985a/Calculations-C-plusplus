@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1678215285 source:c:\users\hp\desktop\programy na github\c++\programs\study assignment\1.zadanie\prog1\main.cpp
+	<iostream>
+	<conio.h>
+
+1678225283 source:c:\users\hp\desktop\portfolio programy na github\c++\programs\first year assignments in computer science studies 1\main.cpp
+	<iostream>
+	<conio.h>
+
+1742008500 source:f:\my portafolio it ulepszona\c++\programs\first year assignments in computer science studies 1\main.cpp
+	<iostream>
+	<iomanip>
+	<limits>
+	"utils.h"
+
+1742008354 f:\my portafolio it ulepszona\c++\programs\first year assignments in computer science studies 1\utils.h
+	<string>
+	<fstream>
+	<ctime>
+
