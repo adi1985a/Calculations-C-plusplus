@@ -29,6 +29,8 @@ _A C++ console application offering a suite of practical tools: salary calculati
 
 All operations are logged to `history.txt`, and errors are recorded with timestamps in `errors.log`. The program features robust input validation, colored console output, and a persistent operation history.
 
+![Demo GIF](screenshots/1.gif)
+
 ## ✨ Key Features
 
 *   🧮 **Salary Calculator**: Computes total salary from hours worked and hourly rate.
@@ -43,9 +45,19 @@ All operations are logged to `history.txt`, and errors are recorded with timesta
 
 ## 🖼️ Screenshots
 
-**Coming soon!**
+_Screenshots of the menu, sample calculations, and history viewing._
 
-_This section will be updated with screenshots of the menu, sample calculations, and history viewing._
+<p align="center">
+  <img src="screenshots\1.jpg" width="300"/>
+  <img src="screenshots\2.jpg" width="300"/>
+  <img src="screenshots\3.jpg" width="300"/>
+  <img src="screenshots\4.jpg" width="300"/>
+  <img src="screenshots\5.jpg" width="300"/>
+  <img src="screenshots\6.jpg" width="300"/>
+  <img src="screenshots\7.jpg" width="300"/>
+  <img src="screenshots\8.jpg" width="300"/>
+  <img src="screenshots\9.jpg" width="300"/>
+</p>
 
 ## ⚙️ System Requirements
 
@@ -120,3 +132,5 @@ Email: adr.lesniak@gmail.com
 
 ---
 🛠️ _Practical tools for everyday calculations, all in one place._
+
+
