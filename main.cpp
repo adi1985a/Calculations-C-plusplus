@@ -70,7 +70,7 @@ void showAbout() {
          << "Adrian Lesniak\n"
          << "Fullstack Developer & Software Engineer\n"
          << "GitHub: https://github.com/adi1985a\n"
-         << "Email: your.email@example.com\n"
+         << "Email: adr.lesniak@gmail.com\n"
          << RESET;
     cout << "\nPress ENTER to return to menu...";
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -117,7 +117,7 @@ void displayMenu() {
 void calculateSalary() {
     clearScreen();
     displayBanner();
-    cout << BLUE << "\n=== Salary Calculator ===\n\n" << RESET;
+    cout << GREEN << "\n=== Salary Calculator ===\n\n" << RESET;
 
     double hours, rate;
     do {
@@ -141,7 +141,7 @@ void calculateSalary() {
 void calculateTicketSales() {
     clearScreen();
     displayBanner();
-    cout << BLUE << "\n=== Stadium Ticket Sales ===\n\n" << RESET;
+    cout << GREEN << "\n=== Stadium Ticket Sales ===\n\n" << RESET;
 
     int a,b,c;
     cout << "Class A (15 NOK): "; cin >> a;
@@ -162,7 +162,7 @@ void calculateTicketSales() {
 void calculateClassPercentages() {
     clearScreen();
     displayBanner();
-    cout << BLUE << "\n=== Class Gender Distribution ===\n\n" << RESET;
+    cout << GREEN << "\n=== Class Gender Distribution ===\n\n" << RESET;
 
     int boys, girls;
     cout << "Number of boys: ";   cin >> boys;
@@ -185,7 +185,7 @@ void calculateClassPercentages() {
 void calculateCinemaProfit() {
     clearScreen();
     displayBanner();
-    cout << BLUE << "\n=== Cinema Profit Calculator ===\n\n" << RESET;
+    cout << GREEN << "\n=== Cinema Profit Calculator ===\n\n" << RESET;
 
     int adult, child;
     cout << "Adult tickets (10 NOK): ";    cin >> adult;
@@ -210,7 +210,7 @@ void calculateCinemaProfit() {
 void convertTime() {
     clearScreen();
     displayBanner();
-    cout << BLUE << "\n=== Time Converter ===\n\n" << RESET;
+    cout << GREEN << "\n=== Time Converter ===\n\n" << RESET;
 
     int sec;
     cout << "Seconds: "; cin >> sec;

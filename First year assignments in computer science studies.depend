@@ -7,11 +7,17 @@
 	<iostream>
 	<conio.h>
 
-1742008500 source:f:\my portafolio it ulepszona\c++\programs\first year assignments in computer science studies 1\main.cpp
+1749249264 source:f:\my portafolio it ulepszona\c++\programs\first year assignments in computer science studies 1\main.cpp
 	<iostream>
 	<iomanip>
 	<limits>
-	"utils.h"
+	<fstream>
+	<ctime>
+	<string>
+	<vector>
+	<thread>
+	<chrono>
+	<windows.h>
 
 1742008354 f:\my portafolio it ulepszona\c++\programs\first year assignments in computer science studies 1\utils.h
 	<string>

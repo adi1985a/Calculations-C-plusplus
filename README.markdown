@@ -1,89 +1,122 @@
-# Number Analysis Program
+# 🛠️ Multi-Tool Utility: Salary, Tickets, Class Stats & More 🎟️📊⏱️  
+_A C++ console application offering a suite of practical tools: salary calculation, stadium ticket sales, class gender statistics, cinema profit analysis, and time conversion, with persistent history and error logging._
 
-## Overview
-This C++ console application analyzes five user-input numbers, calculating their average and identifying the number closest to it. Results are saved to `results.txt`, errors are logged to `program.log`, and the program supports retrying with input validation and a user-friendly interface.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![C++](https://img.shields.io/badge/Language-C%2B%2B%2011%2B-blue.svg)](https://isocpp.org/)
+[![Platform: Cross-platform](https://img.shields.io/badge/Platform-Cross--platform-lightgrey.svg)]()
 
-## Features
-- **NumberAnalyzer Class**:
-  - Stores numbers in a `std::vector<float>`.
-  - `inputNumbers`: Collects five numbers with validation.
-  - `calculateAverage`: Computes the mean of input numbers.
-  - `findClosestNumber`: Finds the number with minimal deviation from the average.
-  - `displayResults`: Shows average and closest number.
-  - `saveToFile`: Appends results to `results.txt`.
-  - `logMessage`: Logs errors with timestamps to `program.log`.
-- **Interface**:
-  - `displayHeader`: Shows program title and version.
-  - Prompts for five numbers and retry option (y/n).
-- **Error Handling**:
-  - Validates numeric input, clears invalid entries.
-  - Logs file I/O errors and invalid inputs.
-- **Main Program**:
-  - Loops to allow retrying until user exits.
-  - Displays results and saves them to file.
+## 📋 Table of Contents
+1. [Overview](#-overview)
+2. [Key Features](#-key-features)
+3. [Screenshots](#-screenshots)
+4. [System Requirements](#-system-requirements)
+5. [Installation and Setup](#️-installation-and-setup)
+6. [Usage Guide](#️-usage-guide)
+7. [File Structure & Data Persistence](#-file-structure--data-persistence)
+8. [Technical Notes](#-technical-notes)
+9. [Contributing](#-contributing)
+10. [License](#-license)
+11. [Contact](#-contact)
 
-## Requirements
-- C++ compiler (e.g., g++, clang++) with C++11 or later
-- Standard C++ libraries: `<iostream>`, `<cmath>`, `<vector>`, `<fstream>`, `<limits>`, `<ctime>`, `<iomanip>`, `<string>`
-- Operating system: Any supporting a C++ compiler (e.g., Windows, Linux, macOS)
-- Write permissions for `results.txt` and `program.log`
+## 📄 Overview
 
-## Setup
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd <repository-directory>
-   ```
-2. Save the provided code as `number_analyzer.cpp`.
-3. Compile the program:
-   ```bash
-   g++ number_analyzer.cpp -o number_analyzer
-   ```
-4. Run the program:
-   ```bash
-   ./number_analyzer
-   ```
+**Multi-Tool Utility** by Adrian Lesniak is a C++ console application providing a menu-driven interface for common computational tasks:
+- Salary calculation
+- Stadium ticket sales revenue
+- Class gender percentage statistics
+- Cinema profit breakdown
+- Time conversion (seconds to minutes/seconds)
 
-## Usage
-1. Compile and run the program using the steps above.
-2. **Interface**:
-   - Displays header and prompts for five numbers.
-   - Shows results: average and closest number.
-   - Asks to retry (y/n).
-3. **Input**:
-   - Enter five numbers, one per prompt.
-   - Invalid inputs (e.g., letters) trigger an error and retry.
-4. **Output**:
-   - Console: Average and closest number (e.g., "Average: 10, Closest number: 9.5").
-   - `results.txt`: Appends results (e.g., "Average: 10, Closest number: 9.5").
-   - `program.log`: Logs errors with timestamps (e.g., invalid input).
-5. **Actions**:
-   - Enter 'y' to retry, any other key to exit.
+All operations are logged to `history.txt`, and errors are recorded with timestamps in `errors.log`. The program features robust input validation, colored console output, and a persistent operation history.
 
-## File Structure
-- `number_analyzer.cpp`: Main C++ source file with program logic.
-- `results.txt`: Output file for results (created/appended).
-- `program.log`: Log file for errors (created/appended).
-- `README.md`: This file, providing project documentation.
+## ✨ Key Features
 
-## Notes
-- No locale settings; uses English text for output.
-- Input validation ensures only numeric values are accepted.
-- File I/O errors are logged but do not crash the program.
-- Extend by adding more statistics (e.g., median, standard deviation) or GUI support.
-- Ensure write permissions for `results.txt` and `program.log`.
-- No external dependencies; uses only standard C++ libraries.
+*   🧮 **Salary Calculator**: Computes total salary from hours worked and hourly rate.
+*   🎟️ **Stadium Ticket Sales**: Calculates total revenue from ticket classes A, B, and C.
+*   👩‍🎓 **Class Gender Stats**: Computes and displays the percentage of boys and girls in a class.
+*   🎬 **Cinema Profit Analyzer**: Calculates gross, net, and distributor profits from ticket sales.
+*   ⏱️ **Time Converter**: Converts seconds into minutes and seconds.
+*   📜 **History Logging**: All results are appended to `history.txt` with timestamps.
+*   🛑 **Error Logging**: Any runtime or input errors are logged to `errors.log`.
+*   🖥️ **User-Friendly Interface**: Clear, colored menus and prompts; ASCII art banner; about section.
+*   🔄 **Retry/Loop**: Menu-driven loop allows repeated use of all tools until exit.
 
-## Contributing
-Contributions are welcome! To contribute:
+## 🖼️ Screenshots
+
+**Coming soon!**
+
+_This section will be updated with screenshots of the menu, sample calculations, and history viewing._
+
+## ⚙️ System Requirements
+
+* **Operating System**: Windows, Linux, or macOS (console/terminal required)
+* **C++ Compiler**: C++11 or later (e.g., g++, clang++, MSVC)
+* **Standard Libraries**: `<iostream>`, `<iomanip>`, `<fstream>`, `<ctime>`, `<string>`, `<vector>`, `<limits>`, `<thread>`, `<chrono>`
+* **Write Permissions**: For `history.txt` and `errors.log` in the working directory
+
+## 🛠️ Installation and Setup
+
+1. **Clone the Repository**:
+    ```bash
+    git clone <repository-url>
+    cd <repository-directory>
+    ```
+2. **Compile the Program**:
+    ```bash
+    g++ main.cpp -o multitool -std=c++11
+    ```
+3. **Run the Program**:
+    * On Windows: `multitool.exe`
+    * On Linux/macOS: `./multitool`
+
+## 💡 Usage Guide
+
+1. Launch the program in your terminal.
+2. Use the menu to select an operation:
+    - Enter the number for the desired tool (1–5).
+    - Follow prompts for input (numbers, ticket counts, etc.).
+    - Results are displayed and saved to `history.txt`.
+3. View operation history via the menu.
+4. View author/about info via the menu.
+5. Exit by selecting `0`.
+
+**Input Validation**:  
+If you enter invalid data (e.g., letters instead of numbers), the program will prompt you to re-enter and log the error.
+
+## 🗂️ File Structure & Data Persistence
+
+* `main.cpp` — Main C++ source file with all logic and menu
+* `history.txt` — Appends all operation results with timestamps
+* `errors.log` — Appends error messages with timestamps
+* `README.markdown` — This documentation
+* `LICENSE` — MIT License
+
+## 📝 Technical Notes
+
+* **Input Validation**: Uses `cin.fail()`, `clear()`, and `ignore()` to ensure only valid numeric input is accepted.
+* **Color Output**: Uses ANSI escape codes for colored text (may not display on all Windows terminals).
+* **Cross-Platform**: Uses `system("cls")` or `system("clear")` for screen clearing.
+* **Thread Sleep**: Uses `std::this_thread::sleep_for` for brief pauses after invalid menu choices.
+* **History Viewing**: Reads and displays the contents of `history.txt` from the menu.
+
+## 🤝 Contributing
+
+Contributions are welcome!  
 1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make changes and commit (`git commit -m "Add feature"`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Open a pull request.
+2. Create a feature branch.
+3. Commit and push your changes.
+4. Open a Pull Request.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## 📃 License
 
-## Contact
-For questions or feedback, open an issue on GitHub or contact the repository owner.
+This project is licensed under the MIT License.  
+See the [LICENSE](LICENSE) file for details.
+
+## 📧 Contact
+
+Created by **Adrian Lesniak**  
+GitHub: https://github.com/adi1985a  
+Email: adr.lesniak@gmail.com
+
+---
+🛠️ _Practical tools for everyday calculations, all in one place._
